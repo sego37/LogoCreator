@@ -26,7 +26,7 @@ inquirer.prompt ([
     }
 ]).then(answers => {
     console.log(answers);
-    const logo = new Logo(answers.text, answers.textColor, "circle", answers.shapeColor);
+    const logo = new Logo(answers.text, answers.textColor, answers.shape, answers.shapeColor);
 
     const logoSVG = logo.render();
 
